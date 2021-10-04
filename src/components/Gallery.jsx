@@ -22,7 +22,7 @@ const Gallery = ()=> {
                             <div className="feat">Bold</div>
                             <div className="feat">Orange</div>
                             <div className="feat">fierce</div>
-                            <div className="feat">female</div>
+                            <div className="feat">male</div>
                         </div>
 
                         <div className="view">
