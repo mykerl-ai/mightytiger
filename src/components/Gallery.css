@@ -1,0 +1,142 @@
+.Gallery {
+    width: 100%;
+    height: auto;
+}
+
+.filter {
+    width: 100%;
+    margin: 100px 30px;
+
+}
+
+.filter h4 {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+text-align: left;
+
+color: #FFFFFF;
+}
+
+.fields {
+    display: flex;
+    gap: 20px;
+}
+
+.fields input {
+width: 296px;
+height: 52px;
+border: 3px solid #6F6E6E;
+fill: none;
+box-sizing: border-box;
+border-radius: 7px;
+background: none;
+}
+
+::placeholder {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.arts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: 0px 30px;
+}
+
+.art {
+width: 499px;
+height: 442px;
+padding-top: 30px;
+background: #12171A;
+box-shadow: 6px 4px 5px 1px rgba(182, 157, 20, 0.51);
+display: flex;
+}
+
+.imgr {
+width: 227px;
+height: 285px;
+object-fit: fill;
+
+}
+
+.artimage {
+    padding: 0px;
+    margin: 20px;
+}
+
+.artimage p {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+color: #FFFFFF
+}
+
+.feats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+   
+}
+
+.feat {
+    width: 99px;
+height: 30px;
+background: #B69D14;
+border-radius: 8px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+padding-top: 10px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+
+.view {
+    margin-top: 140px;
+}
+
+.view button {
+width: 205px;
+height: 43px;
+background: #1C1B1B;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+text-align: center;
+border: none;
+color: #FFFFFF;
+margin-bottom: 10px;
+}
+
+.view span {
+    margin: 5px 0px;
+
+}

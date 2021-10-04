@@ -1,0 +1,41 @@
+.discover {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.discover h2 {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 78px;
+
+color: #FFFFFF;
+}
+
+.tigers {
+    display: flex;
+   
+    gap: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tiger {
+width: 408px;
+height: 417px;
+flex-shrink: 0;
+background: #12171A;
+border-radius: 22px;
+animation: slideshow 12s linear infinite;
+}
+
+@keyframes slideshow{
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+}
+
+.tiger img {
+    width: 100%;
+    object-fit: fill;
+}

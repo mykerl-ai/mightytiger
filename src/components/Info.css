@@ -1,0 +1,148 @@
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+    justify-content: space-between;
+}
+
+.infotext h2 {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 58px;
+line-height: 78px;
+letter-spacing: 3px;
+text-transform: capitalize;
+text-align: left;
+color: #FFFFFF;
+}
+
+.infotext p {
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 43px;
+/* or 179% */
+text-align: left;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+}
+
+.infobox {
+width: 578px;
+height: 682px;
+background: #12171A;
+box-shadow: 4px 2px 8px 1px rgba(182, 157, 20, 0.5);
+border-radius: 43px;
+}
+
+.infobox h5 {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 59px;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+
+.infobox p {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 43px;
+/* or 179% */
+
+margin-top: -50px;
+color: #FFFFFF;
+
+}
+
+.box {
+    width: 100%;
+    height: 100.64px;
+    background: #B69D14;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 78px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    padding: 20px 0px 0px 0px;
+    color: #FFFFFF;
+}
+
+.line {
+width: 578px;
+height: 0px;
+margin-top: 200px;
+border: 1px solid #FFFFFF;
+
+}
+
+.btn {
+    width: 252px;
+    height: 92px;
+    background: #B69D14;
+    border-radius: 6px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 44px;
+/* identical to box height */
+
+text-align: center;
+text-transform: uppercase;
+margin: 17px 0px;
+color: #FFFFFF;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
+
+.item {
+    width: 336px;
+height: 376px;
+background-image: url('../assets/blur.png');
+background-position: center;
+background-color: #B69D14;
+border-radius: 22px;
+padding: 0px 10px;
+}
+
+.heading {
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 22px;
+/* identical to box height, or 92% */
+text-transform: capitalize;
+text-align: center;
+margin: 50px 0px;
+color: #FFFFFF;
+}
+
+.body {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 27px;
+/* or 153% */
+margin: 10px 20px;
+text-align: justify;
+
+color: #FFFFFF;
+}

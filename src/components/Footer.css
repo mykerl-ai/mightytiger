@@ -1,0 +1,111 @@
+.footer {
+    width: 100%;
+    height: 533px;
+    background-image: url('../assets/footblur.png');
+    background-position: center;
+    background-color: #B69D14;
+    margin-top: 200px;
+    display: flex;
+    gap: 50px;
+    padding: 40px;
+}
+
+.name, .menu {
+    width: auto;
+    height: auto;
+    padding: 0px 20px;
+}
+
+.footer h6 {
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 28px;
+line-height: 34px;
+text-align: left;
+color: #FFFFFF;
+}
+
+.name p {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 157.49%;
+/* or 31px */
+text-align: left;
+width: 263px;
+height: 225px;
+color: #FFFFFF;
+}
+
+.name ul {
+    padding: 0px;
+}
+
+.name li {
+    list-style-type: none;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 18px;
+margin: 30px 0px;
+color: #FFFFFF;
+text-align: left;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.discord, .twitter {
+    width: 38px;
+    height: 44px;   
+}
+
+.discord {
+    background: url('../assets/disc.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.twitter {
+    background: url('../assets/tweet.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.disc {
+width: 255px;
+height: 283px;
+margin-top: 70px;
+background: #12171A;
+border-radius: 22px;
+}
+
+.bar {
+height: 80px;
+width: 100%;
+background: #585022;
+display: flex;
+gap: 20px;
+padding: 20px 0px 0px 2px;
+overflow: hidden;
+}
+
+
+.bar p {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 44px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
