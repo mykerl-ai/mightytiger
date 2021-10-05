@@ -90,6 +90,7 @@ border: 1px solid #FFFFFF;
     width: 252px;
     height: 92px;
     background: #B69D14;
+    border: none;
     border-radius: 6px;
     font-family: Montserrat;
 font-style: normal;
@@ -110,6 +111,7 @@ color: #FFFFFF;
     flex-wrap: wrap;
     margin-top: 120px;
     justify-items: center;
+    place-content: center;
 }
 
 .item {

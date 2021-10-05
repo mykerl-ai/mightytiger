@@ -9,6 +9,7 @@
     gap: 50px;
     padding: 40px;
     justify-items: center;
+    place-content: center;
 }
 
 .name, .menu {
