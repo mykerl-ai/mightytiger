@@ -9,7 +9,7 @@ const Discover = () => {
                 { DATA.map(
                     (data, key) => {
                         return (
-                            <div className="tiger"> <img src={data.download_url} alt="" /> </div>
+                            <div key={key} className="tiger"> <img src={data.download_url} alt="" /> </div>
                         )
                     }
 

@@ -6,13 +6,13 @@ const Navbar = () => {
 
     return (
         <header>
-            {/* <div className="gloss"></div> */}
+            <div className="gloss"></div>
             <div className="logo"></div>
             <div className="menu">
                 <Link to="/" href="#">Home</Link>
                 <Link to="/gallery" href="#">Gallery</Link>
-                <a href="#">For Sale</a>
-                <a href="#">My Wallet</a>
+                <Link to="/market">For Sale</Link>
+                <Link to="/wallet">My Wallet</Link>
             </div>
         </header>
     )

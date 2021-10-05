@@ -109,6 +109,7 @@ color: #FFFFFF;
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 120px;
+    justify-items: center;
 }
 
 .item {

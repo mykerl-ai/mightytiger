@@ -4,6 +4,7 @@ import './Info.css'
 const Info = () => {
     return (
         <div className="info">
+             <div className="gloss1"></div>
             <div className="infotext">
                 <h2>
                 mint a tiger
