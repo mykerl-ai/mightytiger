@@ -1,6 +1,7 @@
 import Hero from './Hero';
 import Info from './Info';
 import Discover from './Discover';
+import Progress from './Progress';
 
 const Home = ()=> {
     return (
@@ -8,6 +9,7 @@ const Home = ()=> {
             <Hero />
             <Info />
             <Discover />
+            <Progress />
         </div>
     )
 }

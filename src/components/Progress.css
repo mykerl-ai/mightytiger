@@ -1,0 +1,57 @@
+
+
+.progressBar {
+    width: 100px;
+}
+
+
+.progressGrid, .tigerDetails {
+    display: flex;
+    
+}
+
+.progressGrid {
+    gap:50px;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 130px;
+}
+
+.tigerDetails {
+    flex-basis: auto;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+
+
+.progressDetails img {
+    width: 189.58px;
+    height: 104.26px;
+    object-fit: contain;
+}
+
+.tigerId h6 {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+/* or 93% */
+
+text-align: center;
+
+color: #A29F9F;
+}
+
+.tigerId p{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 12px;
+/* or 87% */
+
+text-align: center;
+
+color: #FFFFFF;
+}
