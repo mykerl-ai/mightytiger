@@ -1,5 +1,5 @@
 import tigerart from '../assets/tigerart.jpg';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 
 const Wallet = ()=> {

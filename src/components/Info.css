@@ -93,20 +93,19 @@ border: 1px solid #FFFFFF;
     border: none;
     border-radius: 6px;
     font-family: Montserrat;
-font-style: normal;
-font-weight: 900;
-font-size: 30px;
-line-height: 44px;
-/* identical to box height */
-
-text-align: center;
-text-transform: uppercase;
-margin: 17px 0px;
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 17px 0px;
+    color: #FFFFFF;
 }
 
 .grid {
     display: flex;
+    width: 100%;
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 120px;
