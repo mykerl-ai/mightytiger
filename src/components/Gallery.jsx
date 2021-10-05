@@ -1,4 +1,5 @@
-import './Gallery.css'
+import './Gallery.css';
+import tigerart from '../assets/tigerart.jpg'
 
 const Gallery = ()=> {
     return (
@@ -14,7 +15,7 @@ const Gallery = ()=> {
             <div className="arts">
                 <div className="art">
                     <div className="artimage">
-                        <img src="https://picsum.photos/id/1001/5616/3744" alt="" className="imgr"/>
+                        <img src={tigerart} alt="" className="imgr"/>
                         <p>MightyTiger #1</p>
                     </div>
                     <div className="attr">
