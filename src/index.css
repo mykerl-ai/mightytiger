@@ -107,17 +107,18 @@ color: #FFFFFF;
   padding: 25px;
 }
 
-.modalContainer .title {
+.modalContainer .title h1 {
   display: inline-block;
   text-align: center;
   margin-top: -100px;
-  width: 100%;
   font-size: 24px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
   
 }
 
 .titleCloseBtn {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .titleCloseBtn button {
@@ -175,10 +176,59 @@ border: none;
 }
 
 #cancelBtn {
-  background-color: crimson;
+  color: white;
+  margin-left: 400px;
 }
 
 .message {
   font-size: 32px;
   margin-top: 150px;
+}
+
+.thead {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: -70px;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 59px;
+/* identical to box height */
+
+text-align: center;
+
+color: #535353;
+}
+
+.tbody {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 59px;
+/* identical to box height */
+
+text-align: left;
+
+}
+
+.tbody:hover{
+   background:rgba(182, 157, 20, 0.39);;
+   padding: 0px 10px;
+}
+
+#modalaction {
+  width: auto;
+  padding: 20px;
+height: auto;
+color: white;
+background-color: #B69D14;
+border-radius: 7px;
+margin-top: 50px;
 }
