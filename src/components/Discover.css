@@ -9,13 +9,11 @@ font-style: normal;
 font-weight: bold;
 font-size: 64px;
 line-height: 78px;
-
 color: #FFFFFF;
 }
 
 .tigers {
     display: flex;
-   
     gap: 20px;
     width: 100%;
     overflow: hidden;
@@ -38,4 +36,16 @@ animation: slideshow 12s linear infinite;
 .tiger img {
     width: 100%;
     object-fit: fill;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .discover h2 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 78px;
+        color: #FFFFFF;
+        }
 }

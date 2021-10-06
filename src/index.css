@@ -232,3 +232,18 @@ background-color: #B69D14;
 border-radius: 7px;
 margin-top: 50px;
 }
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+.gloss {
+  display: none;
+}
+
+#cancelBtn {
+  color: white;
+  margin-left: 300px;
+}
+
+}

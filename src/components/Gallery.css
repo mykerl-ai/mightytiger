@@ -143,3 +143,84 @@ padding-left: -10px;
 
 }
 
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .fields {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .filter {
+        width: 100%;
+        margin: 80px 30px;
+    
+    }
+
+    .arts {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin: 0px 0px;
+        justify-items: center;
+    }
+
+    .art {
+        width: 350px;
+        height: 442px;
+        padding-top: 30px;
+        background: #12171A;
+        box-shadow: 6px 4px 5px 1px rgba(182, 157, 20, 0.51);
+        display: flex;
+        margin-left: 4px;
+        }
+
+        .imgr {
+            width: 151px;
+            height: 170px;
+            object-fit: fill;
+            
+            }
+
+            .feat {
+            width: 59px;
+            height: 30px;
+            background: #B69D14;
+            font-size: 10px;
+            line-height: 22px;
+            }
+
+            .view {
+                margin-top: 120px;
+            }
+            
+            .view button {
+            width: 205px;
+            height: 43px;
+            background: #1C1B1B;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+            text-align: center;
+            border: none;
+            color: #FFFFFF;
+            margin-left: -60px;
+            margin-bottom: 10px;
+            padding-left: -10px;
+            }
+
+            .artimage {
+                padding: 0px;
+                margin: 20px;
+            }
+            
+            .view span {
+                margin: 5px 10px 5px -5px;
+            
+            }
+}
