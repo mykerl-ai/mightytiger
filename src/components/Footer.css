@@ -28,6 +28,14 @@ text-align: left;
 color: #FFFFFF;
 }
 
+.footer a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .name p {
     font-family: Montserrat;
 font-style: normal;
