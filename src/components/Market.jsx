@@ -1,6 +1,8 @@
 import './Market.css';
 import tigerart from '../assets/tigerart.jpg';
 import {useState} from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Market = ()=> {
@@ -17,6 +19,12 @@ const Market = ()=> {
     const handleView = ()=> {
         // setOpenModal(true);
          setView(true);
+    }
+
+    toast.configure()
+
+    const bid = ()=> {
+        toast.success('Bid successful', { position: toast.POSITION.TOP_CENTER, autoClose: 10000 })
     }
 
 
@@ -109,7 +117,7 @@ const Market = ()=> {
                                 <div className="body">
                                   <form action="">
                                       <input type="text" placeholder="Place Bid"/>
-                                      <button id="modalaction">Place Bid</button>
+                                      <button onClick={bid} id="modalaction">Place Bid</button>
                                   </form>
                                </div>
                                </div> 
