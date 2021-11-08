@@ -18,6 +18,24 @@ const Wallet = ()=> {
          setView(true);
     }
 
+    const connectWallet = async () => {
+        //Check if tron wallet is installed.
+        if(window.tronWeb){
+            // Check if wallet is connected:
+            if (window.tronWeb.ready) {
+                setConnected(true);
+            } else{
+                console.log("Wallet not connected. Please connect your wallet.");
+
+                // Then if connected:
+
+                // Go to the person's gallery.
+            }
+        }else{
+            window.open("https://www.tronlink.org/", "_blank");
+        }
+      };
+
 
     if (connected){
 
@@ -134,7 +152,7 @@ const Wallet = ()=> {
         return (
             <div className="Connect">
             <h3>Connect Wallet</h3>
-            <button onClick={()=> setConnected(true)} className="connectbtn">Connect</button>
+            <button onClick={()=> connectWallet()} className="connectbtn">Connect</button>
         </div>
         )
     }
