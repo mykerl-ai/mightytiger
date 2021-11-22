@@ -2,6 +2,8 @@ import "./Hero.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import Web3 from 'web3'
+
 const Hero = () => {
   toast.configure();
 
@@ -12,7 +14,42 @@ const Hero = () => {
       if (window.tronWeb.ready) {
         console.log(window.tronWeb.defaultAddress.base58);
         const tronWeb = window.tronWeb;
-        console.log(tronWeb, "Contract oo")
+        // console.log(tronWeb.contract(require("./myNFT.json"), "0x81c587EB0fE773404c42c1d2666b5f557C470eED"), "make we see")
+        const web3 = new Web3(window.tronWeb);
+        const contract = require("./myNFT.json");
+        const contractAddress = "0x81c587EB0fE773404c42c1d2666b5f557C470eED";
+        console.log(contract, "contract.abi")
+        const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+
+        const PUBLIC_KEY = "TByDAH2qDNynKvgS64mAinQRmGDjChzxxX";
+        const PRIVATE_KEY = ""
+        const tokenURI = "https://gateway.pinata.cloud/ipfs/QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP"
+
+        const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //get latest nonce
+        //the transaction
+        const tx = {
+          'from': PUBLIC_KEY,
+          'to': contractAddress,
+          'nonce': nonce,
+          'gas': 500000,
+          'maxPriorityFeePerGas': 1999999987,
+          'data': nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI()
+        };
+        const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY);
+        signPromise.then((signedTx) => {
+          web3.eth.sendSignedTransaction(signedTx.rawTransaction, function(err, hash) {
+            if (!err) {
+              console.log("The hash of your transaction is: ", hash, "\nCheck Alchemy's Mempool to view the status of your transaction!"); 
+            } else {
+              console.log("Something went wrong when submitting your transaction:", err)
+            }
+          });
+        }).catch((err) => {
+          console.log("Promise failed:", err);
+        });
+
+        throw new Error("End command");
+
 
         var fromAddress = "TM2TmqauSEiRf16CyFgzHV2BVxBejY9iyR"; //address _from
         var toAddress = "TVDGpn4hCSzJ5nkHPLetk8KQBtwaTppnkr"; //address _to
