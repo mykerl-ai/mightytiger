@@ -1,6 +1,7 @@
 import tigerart from '../assets/tigerart.jpg';
 import {useState} from 'react';
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Wallet = ()=> {
 
@@ -18,6 +19,8 @@ const Wallet = ()=> {
          setView(true);
     }
 
+    toast.configure()
+
     const connectWallet = async () => {
         //Check if tron wallet is installed.
         if(window.tronWeb){
@@ -26,6 +29,7 @@ const Wallet = ()=> {
                 setConnected(true);
             } else{
                 console.log("Wallet not connected. Please connect your wallet.");
+                toast.success("Wallet not connected. Please connect your wallet.", { position: toast.POSITION.TOP_CENTER, autoClose: 10000 });
 
                 // Then if connected:
 
